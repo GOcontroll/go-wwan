@@ -1,0 +1,7 @@
+debian/.debhelper
+debian/go-wwan
+debian/debhelper-build-stamp
+debian/go-wwan.postrm.debhelper
+debian/go-wwan.substvars
+debian/go-wwan.debhelper*
+debian/files

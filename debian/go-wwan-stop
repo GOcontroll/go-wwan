@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Delete connection descriptor
+# nmcli connection delete GO-cellular
+
+# Switch off LDO regulator
+if [[ $(tr -d '\0' < /sys/firmware/devicetree/base/hardware) == "Moduline Mini"* ]]; then
+echo 0 > /sys/class/leds/sim7000-level-active/brightness
+else
+echo 0 > /sys/class/leds/ldo-sim7000/brightness
+fi
+# Get PWR and RST pin in low state
+echo 0 > /sys/class/leds/pwr-sim7000/brightness
+echo 0 > /sys/class/leds/rst-sim7000/brightness
+

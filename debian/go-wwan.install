@@ -1,0 +1,3 @@
+debian/go-wwan.service /lib/systemd/system/
+debian/go-wwan-start /usr/bin/
+debian/go-wwan-stop /usr/bin/

@@ -1,0 +1,14 @@
+[Unit]
+Description=GOcontroll WWAN Interface
+After=network.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+
+ExecStart=/usr/bin/go-wwan-start
+ExecStop=/usr/bin/go-wwan-stop
+
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+go-wwan (1.0.1) UNRELEASED; urgency=medium
+
+  * Fix: service started/enabled on install which should not happen
+
+ -- Maud Spierings <maudspierings@gocontroll.com>  Fri, 21 Mar 2025 14:42:58 +0100
+
+go-wwan (1.0.0) bookworm; urgency=medium
+
+  * Initial release.
+
+ -- Maud Spierings <maudspierings@gocontroll.com>  Wed, 19 Mar 2025 14:00:28 +0100
